@@ -29,7 +29,7 @@ img { display: block; max-width: 100%; }
 .wrap, .stage { width: var(--stage); max-width: calc(100% - 32px); margin: 0 auto; }
 
 /* Header */
-.site-header { background: #fff; height: 77px; }
+.site-header { background: #fff; height: 45px; }  /* 37px logo + 8px; nav sits 8px from top and bottom */
 .site-header .wrap { display: flex; justify-content: space-between; align-items: flex-start; }
 .logo {
   background: var(--accent);
@@ -54,7 +54,7 @@ img { display: block; max-width: 100%; }
 .site-header nav a:not(.on):hover { background: var(--accent-hover); }
 
 /* Footer */
-.site-footer .wrap { background: var(--accent); height: 57px; display: flex; align-items: center; padding-left: 9px; }
+.site-footer .wrap { background: var(--accent); height: 32px; display: flex; align-items: center; padding-left: 9px; }
 .site-footer p { font-size: 12px; line-height: 1.4; }
 
 /* Home */

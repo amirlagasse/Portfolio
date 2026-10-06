@@ -28,4 +28,7 @@
 | 25 | Intro: "student" to "senior (expected Spring 2027)" | DONE | in built index.html; hero screenshot checked, wraps cleanly beside photo |
 | 26 | Captions: "Backpacking in the White Mountains"; Ironman 140.6 Ottawa | DONE | both fit on one line in the 340 px frame (screenshot) |
 | 27 | Helicopter tile: remove blur near the landing skids | DONE | dropped the feathered edge; padded the backdrop by stretching its edge pixels, rotated, cropped back; skids checked at full res, no seam |
+| 28 | Commit and push home page update | DONE | 9808990 pushed; live after ~60 s, captions text and all 4 new images return 200 |
+| 29 | Concise README in deslop style; show before committing | IN PROGRESS | written locally, waiting on approval |
+| 30 | Desktop showed stacked photos: browser used cached old CSS; version-stamp CSS/JS links | IN PROGRESS | |
 | 18 | Copyright year updates automatically | DONE | build.py writes current year; site.js sets it from the visitor's clock; test browser with clock at 2031 showed 2031 |

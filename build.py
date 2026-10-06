@@ -12,14 +12,21 @@ Adding a project:
 
 Writes index.html and projects/<slug>.html. Those are generated: edit src/, not them.
 """
-import datetime, html, json, pathlib, sys
+import datetime, hashlib, html, json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / 'src'
 
 
+def version(path):
+    # Short content hash for ?v= so browsers fetch the new file right after a push instead of a cached copy
+    return hashlib.sha1((ROOT / path).read_bytes()).hexdigest()[:8]
+
+
 def render(layout, **v):
     v.setdefault('year', datetime.date.today().year)  # site.js also updates it in the browser
+    v.setdefault('css_v', version('assets/site.css'))
+    v.setdefault('js_v', version('assets/site.js'))
     for k, val in v.items():
         layout = layout.replace('{{' + k + '}}', str(val))
     return layout

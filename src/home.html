@@ -1,7 +1,20 @@
     <section class="hero">
-      <h1>Hi, I'm Amir LaGasse!</h1>
-      <p>I&rsquo;m a <span class="ac">Mechanical Engineering</span> student at Columbia University pursuing minors in <span class="ac">Computer Science</span> and <span class="ac">Aerospace</span>.</p>
-      <p>On this site, you'll find projects that I've worked on during internships, coursework, and in my free time.</p>
+      <div class="hero-text">
+        <h1>Hi, I'm Amir LaGasse!</h1>
+        <p>I&rsquo;m a <span class="ac">Mechanical Engineering</span> senior (expected Spring 2027) at Columbia University pursuing minors in <span class="ac">Computer Science</span> and <span class="ac">Aerospace</span>.</p>
+        <p>On this site, you'll find projects that I've worked on during internships, coursework, and in my personal time.</p>
+      </div>
+      <div class="carousel" aria-roledescription="carousel" aria-label="Photos of Amir">
+        <div class="frame-3x4">
+          <figure class="on"><img src="assets/img/amir-portrait.jpg" alt="Amir LaGasse"></figure>
+          <figure><img src="assets/img/amir-family.jpg" alt="Amir with his family by the water" loading="lazy"><figcaption>My family and I</figcaption></figure>
+          <figure><img src="assets/img/amir-hiking.jpg" alt="Amir backpacking in the White Mountains" loading="lazy"><figcaption>Backpacking in the White Mountains</figcaption></figure>
+          <figure><img src="assets/img/amir-ironman.jpg" alt="Amir with his IRONMAN 140.6 Ottawa finisher medal" loading="lazy"><figcaption>IRONMAN 140.6 Ottawa finisher, 2026</figcaption></figure>
+          <button class="prev" aria-label="Previous photo"></button>
+          <button class="next" aria-label="Next photo"></button>
+        </div>
+        <div class="dots"></div>
+      </div>
     </section>
     <div class="gallery">
 {{gallery}}

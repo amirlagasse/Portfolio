@@ -5,8 +5,11 @@
 Adding a project:
   1. Copy src/_template.html to src/pages/<slug>.html and fill it in.
   2. Add an entry to src/projects.json (order there = order on the home page):
-       {"slug": "<slug>", "title": "Tile + page title", "dates": "Jan - May, 2026",
+       {"slug": "<slug>", "title": "Tile title", "org": "Company, Columbia University or Personal",
+        "dates": "Jan - May, 2026",
         "thumb": "<image in assets/img>", "tab_title": "Short browser tab title"}
+     Optional: "logo": white logo in assets/img/logos/ shown next to "org" on the tile.
+     Optional: "org_alt": text the logo stands for, when "org" leaves it out (screen readers).
      Optional: "footer_gap": px of space above the footer (default 24).
   3. Run the build, open index.html in a browser to check, commit, push.
 
@@ -51,7 +54,11 @@ def main():
 
     tiles = '\n'.join(
         f'      <a class="tile" href="projects/{p["slug"]}.html"><img src="assets/img/{p["thumb"]}" alt="">'
-        f'<span class="cap"><span class="t">{html.escape(p["title"])}</span><span class="d">{html.escape(p["dates"])}</span></span></a>'
+        f'<span class="cap"><span class="t">{html.escape(p["title"])}</span>'
+        + (f'<span class="o">'
+           + (f'<img src="assets/img/{p["logo"]}" alt="{html.escape(p.get("org_alt", ""))}">' if p.get('logo') else '')
+           + f'<span>{html.escape(p["org"])}</span></span>' if p.get('org') else '')
+        + f'<span class="d">{html.escape(p["dates"])}</span></span></a>'
         for p in projects)
     home = render((SRC / 'home.html').read_text(encoding='utf8'), gallery=tiles)
     page = render(layout, title="Amir's Portfolio", root='', home_cls=' class="on"', content=home.rstrip('\n'), footer_gap=12)

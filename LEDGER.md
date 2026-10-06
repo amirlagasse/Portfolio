@@ -29,6 +29,12 @@
 | 26 | Captions: "Backpacking in the White Mountains"; Ironman 140.6 Ottawa | DONE | both fit on one line in the 340 px frame (screenshot) |
 | 27 | Helicopter tile: remove blur near the landing skids | DONE | dropped the feathered edge; padded the backdrop by stretching its edge pixels, rotated, cropped back; skids checked at full res, no seam |
 | 28 | Commit and push home page update | DONE | 9808990 pushed; live after ~60 s, captions text and all 4 new images return 200 |
-| 29 | Concise README in deslop style; show before committing | IN PROGRESS | written locally, waiting on approval |
-| 30 | Desktop showed stacked photos: browser used cached old CSS; version-stamp CSS/JS links | IN PROGRESS | |
+| 29 | Concise README in deslop style; show before committing | DONE | rewritten for visitors per Amir, 0 em dashes, approved, pushed 3b643c9 |
+| 30 | Desktop showed stacked photos: browser used cached old CSS; version-stamp CSS/JS links | DONE | server CSS was new (max-age=600 cache); build.py adds ?v=<sha1 8>; checked at 1000 px; pushed 3b643c9, live HTML has ?v=493cf912 |
+| 31 | Tile hover: company on top | SUPERSEDED | Amir moved it below the title in the same message |
+| 32 | Tile hover: title (no "@ company"), then company bold/colored, then dates | DONE | MagiQ Technologies; MIT Electrochemical Energy Lab x2; Columbia University x3; Personal x2; Chromie Health (from its title); "org" field in projects.json; all 9 overlays screenshotted; not pushed, waiting on approval |
+| 33 | Tile hover: dates white like the company line | DONE | screenshot checked |
+| 34 | Tile hover: company line bigger, more space from title | DONE | 17 to 20 px; 20 px under title, 6 px to dates; long names left-align beside logo |
+| 35 | Logos next to company: MIT, Columbia, MagiQ, Chromie Health | DONE | white silhouettes in assets/img/logos: MIT from Wikimedia SVG, Columbia crown from Wikimedia, MagiQ Q mark from magiqtech.com, Chromie icon from site banner; "logo" field in projects.json; not pushed |
+| 36 | MIT tile line looks out of place (logo too big, name wraps): propose fix | DONE | proposal: logo stands in for "MIT", text "Electrochemical Energy Lab", all logos in one fixed box; company line 19 px, 10 px wider than title; logos 24 px tall, MIT capped 36 px wide; all 9 measured one line; not pushed |
 | 18 | Copyright year updates automatically | DONE | build.py writes current year; site.js sets it from the visitor's clock; test browser with clock at 2031 showed 2031 |

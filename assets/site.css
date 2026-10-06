@@ -109,7 +109,10 @@ img { display: block; max-width: 100%; }
 }
 .tile:hover .cap, .tile:focus-visible .cap { opacity: 1; }
 .tile .t { font-size: 30px; line-height: 1.25; }
-.tile .d { font-size: 15px; margin-top: 10px; }
+.tile .o { display: flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 600; color: #fff; margin: 20px -10px 0; }  /* 10px wider than the title so one-line names fit */
+.tile .o img { height: 24px; width: auto; max-width: 36px; object-fit: contain; flex: none; }  /* wide MIT bars capped so they match the others */
+.tile .o span { text-align: left; line-height: 1.15; }
+.tile .d { font-size: 15px; color: #fff; margin-top: 6px; }
 .rule { border: 0; border-top: 1px solid #b0b0b1; margin: 12px 0 0; }
 
 /* Project pages: generated blocks keep the Wix positions as percentages of the column */
@@ -205,6 +208,8 @@ figcaption { font-size: 20px; line-height: 1.4; text-align: center; margin-top: 
   .hero p + p { margin-top: 22px; }
   .gallery { margin-top: 40px; gap: 6px; grid-template-columns: repeat(2, 1fr); }
   .tile .t { font-size: 18px; }
+  .tile .o { font-size: 13px; gap: 6px; margin: 8px -6px 0; }
+  .tile .o img { height: 15px; max-width: 24px; }
   .tile .d { font-size: 12px; }
 
   .stage > .blk:has(> p, > h1, > h2, > h3, > ul) { margin-left: 0 !important; width: 100% !important; }

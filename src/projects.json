@@ -1,7 +1,9 @@
 [
   {
     "slug": "tension-limiters-splice-stats-magiq",
-    "title": "Tension Limiters & Splice Pull Test Statistics @ MagiQ Technologies",
+    "title": "Tension Limiters & Splice Pull Test Statistics",
+    "org": "MagiQ Technologies",
+    "logo": "logos/magiq.png",
     "dates": "Jun - Aug, 2024",
     "thumb": "46e029_064ba2e574b746d9933cbaac7a8b870b.png",
     "tab_title": "Tension Limiters & Splice Stats @ MagiQ",
@@ -9,15 +11,20 @@
   },
   {
     "slug": "northide-robotics-workflow-mit-s-eel",
-    "title": "NorthIDE Robotics Workflow & CAD @ MIT's Electrochemical Energy Lab",
+    "title": "NorthIDE Robotics Workflow & CAD",
+    "org": "Electrochemical Energy Lab",
+    "logo": "logos/mit.png",
     "dates": "Jul - Aug, 2025",
     "thumb": "46e029_647f5fc9160544629c81fec4d1c6a084.png",
     "tab_title": "NorthIDE Robotics Workflow @ MIT's EEL",
-    "footer_gap": 0
+    "footer_gap": 0,
+    "org_alt": "MIT"
   },
   {
     "slug": "fluid-mechanics-final-project",
     "title": "Fluid Mechanics Tesla Valve & Wing Aerodynamics ANSYS Study",
+    "org": "Columbia University",
+    "logo": "logos/columbia.png",
     "dates": "Nov - Dec, 2025",
     "thumb": "46e029_f6ea0aa32d2c4a5683decf05ed5c1dbc.jpg",
     "tab_title": "Fluid Mechanics Final Project",
@@ -26,6 +33,8 @@
   {
     "slug": "graphics-design-toy-modeling-project",
     "title": "Graphics & Design Toy Modeling Project",
+    "org": "Columbia University",
+    "logo": "logos/columbia.png",
     "dates": "Nov, 2025",
     "thumb": "heli-level.png",
     "tab_title": "Graphics & Design Toy Modeling Project",
@@ -34,6 +43,8 @@
   {
     "slug": "machining-car-jack-fabrication",
     "title": "Machining Car Jack Fabrication",
+    "org": "Columbia University",
+    "logo": "logos/columbia.png",
     "dates": "Nov - Dec, 2025",
     "thumb": "46e029_42f6829758d842c3bcc86ea01d3348ea.png",
     "tab_title": "Scissor Jack Machining Project",
@@ -41,7 +52,9 @@
   },
   {
     "slug": "chromie-swap",
-    "title": "AI Text Platform @ Chromie Health",
+    "title": "AI Text Platform",
+    "org": "Chromie Health",
+    "logo": "logos/chromie.png",
     "dates": "Aug - Sep, 2025",
     "thumb": "chromie-tile.png",
     "tab_title": "AI Text Platform @ Chromie",
@@ -49,15 +62,19 @@
   },
   {
     "slug": "big-kahuna-cad-3d-print-mit-s-eel",
-    "title": "Big Kahuna: CAD & 3D Print @ MIT's Electrochemical Energy Lab",
+    "title": "Big Kahuna: CAD & 3D Print",
+    "org": "Electrochemical Energy Lab",
+    "logo": "logos/mit.png",
     "dates": "Aug - Sep, 2025",
     "thumb": "46e029_d172d4f9bc0441389dfda53c9f2ab865.jpg",
     "tab_title": "Big Kahuna: CAD & 3D Print @ MIT's EEL",
-    "footer_gap": 13
+    "footer_gap": 13,
+    "org_alt": "MIT"
   },
   {
     "slug": "bathroom-ceiling-drip-relocator",
     "title": "Bathroom Ceiling Drip Relocator",
+    "org": "Personal",
     "dates": "Oct - Nov, 2025",
     "thumb": "46e029_cbf79ac66f3248df98da4a1b1c6fdda1.png",
     "tab_title": "Bathroom Ceiling Drip Redirector",
@@ -66,6 +83,7 @@
   {
     "slug": "screenless-wearable-project-in-progress",
     "title": "Screenless Wearable Project (In Progress)",
+    "org": "Personal",
     "dates": "Jun, 2025 - Current",
     "thumb": "46e029_931a08df0a4e4465ba55da49013537f5.jpg",
     "tab_title": "Screenless Wearable Project",

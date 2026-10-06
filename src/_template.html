@@ -1,0 +1,42 @@
+<!--
+  New project page. Copy this file to src/pages/<slug>.html, add an entry to
+  src/projects.json, then run: python build.py
+
+  Put images in assets/img/ and self-hosted videos in assets/video/.
+  Paths below start with ../ because built pages live in projects/.
+  Delete any block you don't need; repeat any block as often as you like.
+-->
+<h1 class="p-title">Project Title @ Company</h1>
+
+<!-- Hero image -->
+<figure class="p-media">
+  <img src="../assets/img/your-image.jpg" alt="">
+  <figcaption>Caption under the image</figcaption>
+</figure>
+
+<!-- Section heading with the orange underline, then paragraphs -->
+<h2 class="p-heading">Project Goal</h2>
+<p class="p-text">First paragraph. Use <strong>bold</strong> for emphasis.</p>
+<p class="p-text">Second paragraph.</p>
+
+<!-- Images side by side: 2, 3 or 4 across (p-row-2 / p-row-3 / p-row-4) -->
+<div class="p-row p-row-3">
+  <figure><img src="../assets/img/a.jpg" alt=""><figcaption>Caption A</figcaption></figure>
+  <figure><img src="../assets/img/b.jpg" alt=""><figcaption>Caption B</figcaption></figure>
+  <figure><img src="../assets/img/c.jpg" alt=""><figcaption>Caption C</figcaption></figure>
+</div>
+
+<!-- YouTube video: paste the id from the URL (youtube.com/watch?v=THIS_PART) -->
+<figure class="p-media">
+  <div class="yt" style="aspect-ratio:16/9"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" loading="lazy" allowfullscreen></iframe></div>
+  <figcaption>Video caption</figcaption>
+</figure>
+
+<!-- Self-hosted video (mp4 in assets/video); poster is optional -->
+<figure class="p-media">
+  <div class="video" style="aspect-ratio:16/9"><video src="../assets/video/clip.mp4" poster="../assets/video/clip.jpg" preload="none" playsinline></video><button class="play" aria-label="Play video"></button></div>
+  <figcaption>Video caption</figcaption>
+</figure>
+
+<!-- PDF link -->
+<p class="p-text pdf"><a href="../assets/docs/report.pdf" target="_blank" rel="noopener"><img src="../assets/img/pdf-icon.png" alt="PDF">Report title</a></p>

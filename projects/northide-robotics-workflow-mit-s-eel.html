@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NorthIDE Robotics Workflow @ MIT&#x27;s EEL | Amir's Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><strong>Amir LaGasse</strong> | MechE, CS &amp; Aerospace</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="https://docs.google.com/document/d/1HB93wSZ5kamXCbg-1qMnQYWSJoEllBeh/edit?usp=sharing&amp;ouid=108342522851885625142&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <div class="stage">
+<div class="blk" style="--mt:81px;margin-left:0%;width:100%"><h1 class="fs-39 center"><strong>NorthIDE Robotics Workflow &amp; CAD @ MIT's Electrochemical Energy Lab</strong></h1></div>
+<div class="blk" style="--mt:41px;margin-left:13.571%;width:79.286%"><img src="../assets/img/46e029_48acfa45d94441638d179b6556973299.png" alt="" loading="lazy" style="aspect-ratio:777/713"></div>
+<div class="blk" style="--mt:0px;margin-left:38.469%;width:31.849%"><p class="fs-20" style="line-height:1.40">Photo Courtesy of North Robotics</p></div>
+<div class="blk" style="--mt:13px;margin-left:10.612%;width:65%"><h2 class="fs-43">Project Goal</h2></div>
+<div class="blk" style="--mt:0px;margin-left:10.612%;width:79.184%"><hr style="border-top:4px solid #e09c00"></div>
+<div class="blk" style="--mt:13px;margin-left:10.612%;width:83.265%"><p class="fs-20">The main goal was to assemble, wire, calibrate, and program the North Robotics system for automated vial handling and ink preparation. Initial tasks included updating the software to the latest NorthIDE version, which required migrating project files and reconfiguring robotic modules. This fixed the compatibility issues that I was having with controllers and pump modules. The next task was to implement mechanical integration of all modules by aligning the pipette remover, carousel, and vial racks to ensure consistent pickup and placement. System calibration and troubleshooting included tuning X, Y, and Z-axis offsets for reliable vial gripping and debugging powder dispenser/Sonicator connection issues.</p></div>
+<div class="blk" style="--mt:86px;margin-left:0%;width:100%"><p class="fs-25" style="line-height:1.40">System in Action</p></div>
+<div class="blk" style="--mt:15px;margin-left:0%;width:100%"><div class="yt" style="aspect-ratio:16/9"><iframe src="https://www.youtube.com/embed/M99miMn5THs" title="YouTube video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div></div>
+<div class="blk" style="--mt:40px;margin-left:0%;width:100%"><div class="steps fs-17"><div class="step">1. Select &amp; Retrieve Vial<br>a. Robot locates target vial from rack<br>b. Moves vial to vial clamp</div><div class="step">2. Uncap Vial<br>a. Gripper removes cap and stores it<br>b. Robot moves out of way for powder dispensing</div><div class="step">3. Powder Dispensing<br>a. Carousel moves to powder dispenser position<br>b. Dispenses target powder amount into vial</div><div class="step"><span style="color:rgb(255, 64, 64)">4. Liquid Dispensing — Water</span><br>a. Picks up fresh pipette<br>b. Aspirates desired volume from water vial<br>c. Dispenses into target vial<br>d. Discards pipette</div><div class="step">5. Liquid Dispensing — Isopropanol<br>a. <span style="color:rgb(255, 64, 64)">Step #4 </span>repeats<br>b. Recap vial</div><div class="step">6. Sonication Step 1<br>a. Places vial in sonicator<br>b. Runs for desired time</div><div class="step">7. Binder Addition<br>a. Retrieves vial from sonicator<br>b. Uncaps vial<br>c. <span style="color:rgb(255, 64, 64)">Step #4 </span>repeats<br>d. Recaps vial</div><div class="step">8. Sonication Step 2<br>a. Places vial back in sonicator<br>b. Runs for second timed cycle</div><div class="step">9. Reset<br>a. Home vial and robot</div></div></div>
+<div class="blk" style="--mt:70px;margin-left:15.102%;width:73.878%"><h2 class="fs-32" style="line-height:1.40">North Robotics System – CAD Hardware Extension</h2></div>
+<div class="blk" style="--mt:10px;margin-left:13.571%;width:72.857%"><img src="../assets/img/46e029_905b7fad1c2c4efaab23fbd303a2f96f.png" alt="" loading="lazy" style="aspect-ratio:714/506"></div>
+<div class="blk" style="--mt:0px;margin-left:13.265%;width:73.367%"><p class="fs-20 center" style="line-height:1.40">Automated Probe Measurement: Designed CAD models and printed both the probe and a dedicated probe holder. The robot retrieves the probe from the holder, performs ORR measurements at each position, and returns it after use.</p></div>
+<div class="row" style="--mt:37px">
+  <div class="col" style="margin-left:0.611%;width:47.558%;--mt:0px">
+    <div class="blk" style="--mt:0px;margin-left:0%;width:100%"><img src="../assets/img/46e029_c9cf9f449ca6409b8547a0332f75549e.png" alt="" loading="lazy" style="aspect-ratio:701/445"></div>
+  </div>
+  <div class="col" style="margin-left:2.714%;width:49.118%;--mt:0px">
+    <div class="blk" style="--mt:0px;margin-left:0%;width:100%"><img src="../assets/img/46e029_5a7c2d9f42374f7aba41afcf7f788190.png" alt="" loading="lazy" style="aspect-ratio:724/445"></div>
+  </div>
+</div>
+<div class="row stack" style="--mt:0px">
+  <div class="col" style="margin-left:0%;width:48.779%;--mt:0px">
+    <div class="blk" style="--mt:0px;margin-left:0%;width:100%"><p class="fs-20 center" style="line-height:1.40">Ink Dropping Station: Designed a holder for 12 electrochemical testing substrates (working electrode disks). The robot maps to each position and dispenses ink with a fresh pipette for each sample.</p></div>
+  </div>
+  <div class="col" style="margin-left:2.239%;width:48.779%;--mt:0px">
+    <div class="blk" style="--mt:0px;margin-left:0%;width:100%"><p class="fs-20 center" style="line-height:1.40">Second Vial Rack: Designed and built a custom CAD vial rack to store vials. It holds the main set of vials while the company-supplied rack is placed in the sonicator.</p></div>
+  </div>
+</div>
+  </div>
+</main>
+<footer class="site-footer" style="margin-top:0px">
+  <div class="wrap"><p>&copy; 2025 Amir LaGasse. All rights reserved.</p></div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

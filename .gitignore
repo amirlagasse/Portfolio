@@ -1,0 +1,25 @@
+# Local tooling: scraper, its Python env, screenshots
+.scrape/
+
+# Claude Code local settings
+.claude/
+
+# Secrets (none used, kept out just in case)
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

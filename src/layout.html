@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="{{root}}index.html"><strong>Amir LaGasse</strong> | MechE, CS &amp; Aerospace</a>
+    <nav>
+      <a href="{{root}}index.html"{{home_cls}}>Home</a>
+      <a href="https://docs.google.com/document/d/1HB93wSZ5kamXCbg-1qMnQYWSJoEllBeh/edit?usp=sharing&amp;ouid=108342522851885625142&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <div class="stage">
+{{content}}
+  </div>
+</main>
+<footer class="site-footer" style="margin-top:{{footer_gap}}px">
+  <div class="wrap"><p>&copy; 2025 Amir LaGasse. All rights reserved.</p></div>
+</footer>
+<script src="{{root}}assets/site.js"></script>
+</body>
+</html>

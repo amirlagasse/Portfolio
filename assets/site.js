@@ -11,17 +11,27 @@ document.querySelectorAll('.video').forEach(box => {
   });
 });
 
-// Image carousel (Graphics & Design "Modeling Plan").
+// Image slider (Graphics & Design "Modeling Plan"): arrows on hover, blue dots under it.
 document.querySelectorAll('.slider').forEach(s => {
   const imgs = [...s.querySelectorAll('img')];
+  const dots = document.createElement('div');
+  dots.className = 'dots';
+  s.after(dots);
   let i = 0;
   const show = n => {
-    imgs[i].classList.remove('on');
     i = (n + imgs.length) % imgs.length;
-    imgs[i].classList.add('on');
+    imgs.forEach((im, k) => im.classList.toggle('on', k === i));
+    [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
   };
+  imgs.forEach((_, n) => {
+    const d = document.createElement('button');
+    d.setAttribute('aria-label', `Image ${n + 1} of ${imgs.length}`);
+    d.addEventListener('click', () => show(n));
+    dots.appendChild(d);
+  });
   s.querySelector('.prev').addEventListener('click', () => show(i - 1));
   s.querySelector('.next').addEventListener('click', () => show(i + 1));
+  show(0);
 });
 
 // Home photo carousel: arrows, dots, arrow keys and swipe.

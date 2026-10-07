@@ -188,6 +188,16 @@ p a { text-decoration: underline; overflow-wrap: anywhere; }
 .p-row-4 { grid-template-columns: repeat(4, 1fr); }
 .p-row img { aspect-ratio: 4/3; object-fit: cover; }
 figcaption { font-size: 20px; line-height: 1.4; text-align: center; margin-top: 4px; }
+.p-text.center { text-align: center; }
+.p-text.pdf img { width: auto; height: 55px; flex: none; }
+.p-media.narrow { max-width: 640px; margin-inline: auto; }
+.p-media.portrait { max-width: 480px; margin-inline: auto; }
+.p-row.fit { display: flex; gap: 10px; }   /* each figure grows by its image's aspect ratio, so heights match */
+.p-row.fit figure { flex: var(--ar) 1 0; min-width: 0; }
+.p-row.fit img { aspect-ratio: auto; }
+.p-row.natural img { aspect-ratio: auto; }   /* keep each image's own shape (portrait photos, CAD renders) */
+.p-list { font-size: 20px; line-height: 1.4; margin: 12px 10% 0; padding-left: 1.2em; }
+.p-list li + li { margin-top: 6px; }
 
 /* Phones: image rows scale down in place, paragraph rows stack */
 @media (max-width: 760px) {
@@ -225,6 +235,7 @@ figcaption { font-size: 20px; line-height: 1.4; text-align: center; margin-top: 
   .p-title { font-size: 28px; margin-top: 40px; }
   .p-heading { font-size: 30px; margin: 36px 0 0; }
   .p-text { font-size: 16px; margin: 12px 0 0; }
+  .p-list { font-size: 16px; margin: 10px 0 0; }
   .p-row-3, .p-row-4 { grid-template-columns: repeat(2, 1fr); }
   figcaption { font-size: 15px; }
   .row:not(.stack) .fs-20, .row:not(.stack) .fs-17 { font-size: 13px; }

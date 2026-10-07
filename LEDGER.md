@@ -37,4 +37,8 @@
 | 34 | Tile hover: company line bigger, more space from title | DONE | 17 to 20 px; 20 px under title, 6 px to dates; long names left-align beside logo |
 | 35 | Logos next to company: MIT, Columbia, MagiQ, Chromie Health | DONE | white silhouettes in assets/img/logos: MIT from Wikimedia SVG, Columbia crown from Wikimedia, MagiQ Q mark from magiqtech.com, Chromie icon from site banner; "logo" field in projects.json; not pushed |
 | 36 | MIT tile line looks out of place (logo too big, name wraps): propose fix | DONE | proposal: logo stands in for "MIT", text "Electrochemical Energy Lab", all logos in one fixed box; company line 19 px, 10 px wider than title; logos 24 px tall, MIT capped 36 px wide; all 9 measured one line; not pushed |
+| 37 | Commit and push tile company + logos | DONE | db920ac pushed; live after ~60 s with site.css?v=89261827; all 4 logos return 200 |
+| 38 | New project from manufacturing final report PDF, 4th tile (others shift down, 10 total) | DONE | race-car-manufacturing page + tile 4; Columbia University, Spring 2026; build shows 10 pages; 0 missing refs; phone width 390 no overflow |
+| 39 | Link the renamed PDF like the ANSYS page; pick key text, rewrite goals in site style; use the report images | DONE | assets/docs/race-car-manufacturing-report.pdf; all 16 report images used; numbers only from the report; mixed-shape rows sized to equal heights |
+| 40 | Show it in an artifact before commit | DONE | preview v10 published; waiting on approval to push |
 | 18 | Copyright year updates automatically | DONE | build.py writes current year; site.js sets it from the visitor's clock; test browser with clock at 2031 showed 2031 |

@@ -31,6 +31,15 @@
     "footer_gap": 40
   },
   {
+    "slug": "race-car-manufacturing",
+    "title": "1924 Delage 2LCV Race Car Manufacturing",
+    "org": "Columbia University",
+    "logo": "logos/columbia.png",
+    "dates": "Spring 2026",
+    "thumb": "race-car/tile.jpg",
+    "tab_title": "Race Car Manufacturing"
+  },
+  {
     "slug": "graphics-design-toy-modeling-project",
     "title": "Graphics & Design Toy Modeling Project",
     "org": "Columbia University",
